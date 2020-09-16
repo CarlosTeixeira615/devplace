@@ -7,13 +7,20 @@ import {
 
 import LandingPage from './pages/LandingPage'
 
+import {
+    GlobalStyle
+} from './style/global'
+
 const RoutesMain = () => {
     return (
-        <Routes>
-            <Switch>
-                <Route path="/" exact component={ LandingPage } />
-            </Switch>
-        </Routes>
+        <>
+            <GlobalStyle/>
+            <Routes>
+                <Switch>
+                    <Route path="/" exact component={ LandingPage } />
+                </Switch>
+            </Routes>
+        </>
     )
 }
 
