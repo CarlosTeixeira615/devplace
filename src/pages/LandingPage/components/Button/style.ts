@@ -1,4 +1,5 @@
-import styled from 'styled-components'
+import styled from "styled-components";
+import { shade } from "polished";
 
 export const ButtonElement = styled.button`
     width: 20rem;
@@ -10,6 +11,9 @@ export const ButtonElement = styled.button`
 
     box-shadow: 1px 1px 4px #000;
 
-    background-color: ${ props => props.backgroundColor };
-    color: ${ props => props.color };
-`
+    background-color: ${(props) => props.backgroundColor};
+    color: ${(props) => props.color};
+    &:hover {
+        background: ${shade(0.2, "#ffffff")};
+        }
+`;

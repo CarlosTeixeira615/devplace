@@ -6,7 +6,7 @@ import {
 
 interface ButtonProps {
     color: string;
-    backgroundColor: string;
+    backgroundColor: string | undefined;
     title: string;
     onPress?: any;
 }
