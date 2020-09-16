@@ -1,5 +1,5 @@
+import { shade } from "polished";
 import styled from 'styled-components'
-
 const colors = {
     white: "#fff",
     whiteDark: "#F5F5F5",
@@ -37,16 +37,9 @@ export const Slogan = styled.h1`
     color: ${ colors.gray };
 `
 
-export const ButtonCont = styled.div`
-    position: absolute;
-
-    top: 70%;
-    left: 2%;
-`
 
 export const ContainerRight = styled.div`
     position: absolute;
-
     top: 0%;
     right: 0%;
 
@@ -56,7 +49,7 @@ export const ContainerRight = styled.div`
 export const Image = styled.img`
     margin-top: 10rem;
 
-    width: 546px;
+    max-width: 520px;
 `
 
 export const Paragraph = styled.p`
@@ -66,3 +59,12 @@ export const Paragraph = styled.p`
 
     color: ${ colors.gray };
 `
+export const ButtonCont = styled.div`
+    
+
+    position: absolute;
+    background-color:"#FA5805";
+    top: 70%;
+    left: 2%;
+`
+export const ButtonCont2 = styled.div``
