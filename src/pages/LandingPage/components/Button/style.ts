@@ -12,4 +12,9 @@ export const ButtonElement = styled.button`
 
     background-color: ${ props => props.backgroundColor };
     color: ${ props => props.color };
+
+    :hover{
+        transition: 0.4s;
+        background-color: ${ props => props.hover };
+    }
 `
