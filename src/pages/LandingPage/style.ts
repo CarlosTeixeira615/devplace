@@ -1,18 +1,56 @@
 import styled from 'styled-components'
 
-const colors = {
-    white: "#fff",
-    whiteDark: "#F5F5F5",
-    black: "#000",
-    gray: "#525252",
-    orange: "#FA5805"
-}
+import { Pallet } from '../../style/global'
 
 export const Container = styled.div`
     width: 60%;
     height: 100vh;
 
     background-color: #000;
+
+    @media(max-width: 460px) {
+        position: absolute;
+
+        top: 0;
+
+        width: 100vw;
+        height: 60vh;
+
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+
+        #title {
+            top: 24%;
+            left: 5%;
+            font-size: 2rem;
+        }
+
+        #slogan {
+            top: 45%;
+            left: 5%;
+            font-size: 2rem;
+        }
+
+        Button{
+            position: absolute;
+            width: 10rem;
+            height: 2rem;
+            margin-right: 0.2rem;
+        }
+
+        Button:first-of-type{
+            position: absolute;
+
+            top: 40px;
+            left: 13px;
+        }
+
+        Button:last-of-type {
+            position: absolute;
+            top: 40px;
+            left: 11rem;
+        }
+    }
 `
 
 export const Title = styled.h1`
@@ -23,7 +61,7 @@ export const Title = styled.h1`
 
     font-size: 60px;
 
-    color: #fff;
+    color: ${Pallet.white};
 `
 
 export const Slogan = styled.h1`
@@ -34,7 +72,7 @@ export const Slogan = styled.h1`
 
     font-size: 40px;
 
-    color: ${ colors.gray };
+    color: ${ Pallet.gray };
 `
 
 export const ButtonCont = styled.div`
@@ -47,15 +85,35 @@ export const ButtonCont = styled.div`
 export const ContainerRight = styled.div`
     position: absolute;
 
-    top: 0%;
-    right: 0%;
+    top: 30%;
+    left: 0%;
+
+    width: 100vw;
 
     text-align: right;
+
+    @media(max-width: 460px) {
+        top: 60%;
+        height: 40vh;
+
+        img{
+            position: absolute;
+
+            left: 14%;
+
+            width: 300px;
+        }
+
+        p {
+            position: absolute;
+
+            top: 88%;
+            left: 12%;
+        }
+    }
 `
 
 export const Image = styled.img`
-    margin-top: 10rem;
-
     width: 546px;
 `
 
@@ -64,5 +122,5 @@ export const Paragraph = styled.p`
 
     font-size: 1rem;
 
-    color: ${ colors.gray };
+    color: ${ Pallet.gray };
 `

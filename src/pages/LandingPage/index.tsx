@@ -12,16 +12,26 @@ import {
     Paragraph
 } from './style'
 
+import {
+    RiMenuLine
+} from 'react-icons/all'
+
 import * as landingPageImage from '../../assets/image/landingPage.png'
 
 const LandingPage: React.FC = () => {
     return (
         <>
             <Container>
-                <Title>DevPlace</Title>
-                <Slogan>Sua plataforma de <br/>freelancer</Slogan>
+                <RiMenuLine 
+                    color="#fff" 
+                    size={30}
+                    style={{ marginLeft: "12px" }}
+                />
+                <Title id="title">DevPlace</Title>
+                <Slogan id="slogan">Sua plataforma de <br/>freelancer</Slogan>
                 <ButtonCont>
                     <Button
+                        id="sigin"
                         title="Registre-se"
                         color="#fff"
                         backgroundColor="#FA5805"

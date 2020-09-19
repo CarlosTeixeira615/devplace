@@ -19,3 +19,11 @@ export const GlobalStyle = createGlobalStyle`
     cursor: pointer;
   }
 `
+
+export const Pallet = {
+  white: "#fff",
+  whiteDark: "#F5F5F5",
+  black: "#000",
+  gray: "#525252",
+  orange: "#FA5805"
+}
